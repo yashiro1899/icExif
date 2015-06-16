@@ -9,8 +9,14 @@ try {
         var et = data.exif["ExposureTime"] || "N/A";
         var ec = data.exif["ExposureCompensation"] || "N/A";
         var fl = data.exif["FocalLength"] || "N/A";
-        if (typeof et === "number" && et < 1) et = "1/" + Math.round(1 / et) + " sec";
-        if (typeof ec === "number" && ec !== 0) ec = Math.round(3 * ec) + "/3 EV";
+        if (typeof et === "number") {
+            if (et < 1) et = "1/" + Math.round(1 / et);
+            et += " sec";
+        }
+        if (typeof ec === "number") {
+            if (ec !== 0) ec = Math.round(3 * ec) + "/3";
+            ec += " EV"
+        }
         if (typeof fl === "number") fl = fl + " mm";
 
         console.log("    品牌: %s", data.image["Make"] || "N/A");
