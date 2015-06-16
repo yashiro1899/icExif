@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "提取出主要的照片信息",
   "main": "index.js",
-  "bin": "./bin/icExif"
+  "bin": "./bin/icExif",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
