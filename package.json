@@ -1,6 +1,6 @@
 {
   "name": "icexif",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "提取出主要的照片信息",
   "main": "index.js",
   "bin": "./bin/icExif",
