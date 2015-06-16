@@ -1,0 +1,25 @@
+{
+  "name": "icExif",
+  "version": "1.0.0",
+  "description": "提取出主要的照片信息",
+  "main": "exif.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yashiro1899/icExif.git"
+  },
+  "keywords": [
+    "exif"
+  ],
+  "author": "Ice White",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yashiro1899/icExif/issues"
+  },
+  "homepage": "https://github.com/yashiro1899/icExif",
+  "dependencies": {
+    "exif": "^0.4.0"
+  }
+}
